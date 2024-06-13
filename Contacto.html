@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - LeooTEC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #213d30;
+        }
+        header {
+            background-image: url('Logo de la empresa.png');
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+        nav {
+            background-color: #213d30;
+            overflow: hidden;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 16px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #fff;
+            color: #213d30;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            color: #213d30;
+            border: 2px solid #213d30;
+            border-radius: 8px;
+        }
+        .btn {
+            background-color: #213d30;
+            color: #fff;
+            border: 2px solid #213d30;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        footer {
+            background-color: #213d30; /* verde botella */
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+        footer::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #fff; /* blanco */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contacto - LeooTEC</h1>
+        
+    </header>
+    
+    <nav>
+        <a href="Pagina de Empresa.html">Inicio</a>
+        <a href="Paquete 1.html">Paquete 1</a>
+        <a href="Paquete 2.html">Paquete 2</a>
+        <a href="Paquete 3.html">Paquete 3</a>
+        <a href="Contacto.html">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Puedes contactarnos a través del siguiente formulario:</p>
+            <form action="contacto.php" name="contacto" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+                <input type="hidden" name="registro" value="1">
+                <input type="submit" value="Enviar" class="btn">
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 LeooTEC. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

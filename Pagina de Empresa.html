@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeooTEC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #213d30;
+        }
+        header {
+            position: relative;
+            background-image: url('Logo de la empresa.png');
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        nav {
+            background-color: #213d30;
+            overflow: hidden;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #fff;
+            color: #213d30;
+        }
+        .container {
+            max-width: 80%;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        section {
+            background-color: #fff;
+            padding: 40px;
+            margin-bottom: 20px;
+            color: #213d30;
+            border: 2px solid #213d30;
+            border-radius: 8px;
+        }
+        .highlighted-section {
+            background-color: #f0f0f0; /* gris claro */
+            padding: 40px;
+            margin-bottom: 20px;
+            color: #213d30;
+            border: 2px solid #213d30;
+            border-radius: 8px;
+        }
+        .btn {
+            background-color: #213d30;
+            color: #fff;
+            border: 2px solid #213d30;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #213d30;
+            border-radius: 8px;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            flex: 1 1 calc(33% - 40px); /* Ajuste del ancho para 3 columnas con espacio */
+            margin-bottom: 20px;
+            color: #213d30;
+            border: 2px solid #213d30;
+            border-radius: 8px;
+            text-align: center; /* Centrando el contenido del cuadro */
+        }
+        .card img {
+            display: block;
+            margin: 0 auto 10px auto; /* Centrando la imagen y añadiendo un margen inferior */
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #213d30; /* Fondo verde */
+            padding: 10px;
+            text-align: center;
+            color: #fff; /* Texto blanco para contraste */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="Pagina de Empresa.html">Inicio</a>
+            <a href="Paquete 1.html">Paquete 1</a>
+            <a href="Paquete 2.html">Paquete 2</a>
+            <a href="Paquete 3.html">Paquete 3</a>
+            <a href="Contacto.html">Contacto</a>
+        </nav>
+        <h1>Bienvenido a LeooTEC</h1>
+    </header>
+
+    <div class="container">
+        <section class="highlighted-section">
+            <h2>Diseñadores de Paginas Web</h2>
+            <p>Ten tu Pagina Web Auto, Administrable y Diseñada Profecionalmente</p>
+            <p>Hoy en dia existen cientos de plataformas que te ofrecen el diseño web de tu página de manera rapida e intuitiva,pero NINGUNA te ofrece los resultados profecionales que te ofrcemos en LeooTec la mejor empresa de creación y diseño de paginas web.</p>
+            <p>No pierdas tu tiempo buscando otras  empresas que no te daran NINGUN RESULTADO  con LeooTec te ofrecemos servicios a poco costo, un buen servico, una buena atencion al cliente y más. Contactanos tu mejor opcion es LeooTEC.</p>
+        </section>
+
+        <div class="image-container">
+            <img src="descarga2.jpg" alt="Imagen de información">
+            <img src="descarga3.jpg" alt="Imagen de información">
+            <img src="descarga4.jpg" alt="Imagen de información">
+            <img src="images5.jpg" alt="Imagen de información">
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>Paquete 1</h3>
+                <img src="3.jpeg" alt="Imagen de información">
+                <a href="Paquete 1.html" class="btn">Más información</a>
+            </div>
+            <div class="card">
+                <h3>Paquete 2</h3>
+                <img src="4.jpeg" alt="Imagen de información">
+                <a href="Paquete 2.html" class="btn">Más información</a>
+            </div>
+            <div class="card">
+                <h3>Paquete 3</h3>
+                <img src="2.jpeg" alt="Imagen de información">
+                <a href="Paquete 3.html" class="btn">Más información</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 LeooTEC. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
